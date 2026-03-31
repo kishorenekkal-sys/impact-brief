@@ -19,9 +19,9 @@ st.markdown("""
     .yellow-border { border-color: #ffaa00; }
     .green-border { border-color: #28a745; }
     </style>
-    """, unsafe_content_allowed=True)
+    """, unsafe_allow_html=True)
 
-st.markdown('<h1 class="main-header">The Impact Brief</h1>', unsafe_content_allowed=True)
+st.markdown('<h1 class="main-header">The Impact Brief</h1>', unsafe_allow_html=True)
 st.write(f"**Manor Lakes, Victoria** | {datetime.now().strftime('%A, %d %B %Y')}")
 st.divider()
 
@@ -60,4 +60,4 @@ for i, news in enumerate(news_data):
                 <hr style="border: 0.5px solid #eee;">
                 <p style="font-size: 14px; color: #333;">💡 <b>Action:</b> Schedule a briefing with the fintech team.</p>
             </div>
-        """, unsafe_content_allowed=True)
+        """, unsafe_allow_html=True)
